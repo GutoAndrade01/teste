@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: auto;
+    background:hsl(0, 1%, 17%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+}
+
+.left-login > h1{
+    color: #0bf833f8;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.recuperacao-senha{
+    color: rgb(228, 230, 231);
+    padding:30px ;
+    width:20px ;
+    cursor: pointer;
+    
+}
+.criar-conta{
+    color: rgb(228, 230, 231);
+    width:20px ;
+    cursor: pointer;
+   
+}
+.lincagem{
+    align-items: center;
+    justify-content: center;
+}
+
+.left-login-imagem > {
+    width: 10vw;
+}
+
+.card-login{
+    width: 60%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #222121e3;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #55917da6;
+
+}
+
+.card-login > h1{
+   color: #0bf833f8;
+}
+
+.textfilder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 60%;
+
+}
+
+.textfilder > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #3b4945a6;
+    color: #0c0f0fde;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+   
+}
+
+
+
+.btn-login{
+    width:45%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #121413f8;
+    background:#0bf833f8 ;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #0bf833f8;
+}
+.left-login-imagem{
+    width: 40vw;
+}
+
+@media only screen and (max-widht:950px){
+    .card-login{
+         width: 85%;
+    }
+}
+
+@media only screen and (max-widht:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+       display: none;   
+    }
+    .left-login{
+        width: 100%;
+        right: auto;
+    }
+    .right-login{
+        width: 100%;
+        right: auto;
+    }
+}
